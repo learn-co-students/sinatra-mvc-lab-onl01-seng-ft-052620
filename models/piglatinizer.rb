@@ -7,9 +7,9 @@ class PigLatinizer
   end
 
   def piglatinize(string)
-      a = string.split(" ")
-      b = a.map {|word| piglatinize_word(word)}
-      b.join(" ")
+      array = string.split(" ")
+      transformed_array = array.map {|word| piglatinize_word(word)}
+      transformed_array.join(" ")
   end
 
   def piglatinize_word(word)
